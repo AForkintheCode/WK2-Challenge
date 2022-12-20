@@ -1,10 +1,12 @@
 :root{
     --light: white;
     --dark: rgb(22, 22, 22);
+    --ban:aqua;
 }
 
 *{
-    background-color:rgb(153, 38, 247);
+ padding: 0px;
+ margin: 0px;  
 }
 
 /*navigation stuff*/
@@ -12,44 +14,66 @@
 .banner{
     display:flex;
     flex-direction: row;
-    background-color: skyblue;
+    background-color: var(--ban);
     width: 100%;
 }
 
-.banner.nameplate, h1 {
+h1 {
     display: flex;
-    background-color: var(--light);
-    font-family: monospace;
     font-size: 400%;
     padding: 15px;    
-    margin: 0px;
+    margin-bottom:auto;
 }
 
-.navbar{
+h3{
+    display: flex;
+    font-size: 200%;
+    padding: 15px;    
+    margin-bottom:auto;
+}
+
+a{
+    color: brown;    
+}
+
+.topnavbar{
     display: inline-flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     margin-left: auto;
     margin-top: auto;
 }
 
+.botbanner{
+    display:flex;
+    flex-direction: row;
+    background-color: var(--ban);
+    width: 100%;
+    margin-top: 20px;
+}
+
+.botnavbar{
+    display: inline-flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-left: 10px;
+}
 .navbutton{
-    background-color: var(--light);
     display: flex;        
     padding: 5px;
     margin: 5px;    
     text-decoration-line: underline;
     text-align: center;
+    font-size: 25px;
     
 }
 
 .navbutton:hover{
     color: var(--light);
-    background-color: var(--dark);
 }
 
 
 .tickertape {
-    background-color: brown;
+    background-color: rgb(150, 75, 75);
     width: 100%;
     height: 5em;
     margin: 0px;
@@ -63,14 +87,10 @@
 }
 
 
-.nameplate, h3{
+.nameplate {
     display: inline-flex;
-    background-color: var(--light);
-    font-family: monospace;
-    font-size: 30px;
     text-align: center;   
-    margin-top: 10px; 
-    padding-left:
+    margin-top: 10px;     
 }
 
 .spiel{
@@ -78,21 +98,52 @@
     position: relative;
     left: 0px;
     text-align: start;
+    padding: 10px;
 }
 
 
 .content{
     display: grid;
     grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    border-color: blue;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 5px;
+    border-right: 0px;
+    border-style: solid;
 }
 
 
 .mainfeature{
     width:98%;
+    filter: saturate(0.1);
+    transition: all .75s ease-in-out;
+    background-image:url(Sunset.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
     border: 5px;
     border-style: solid;
     border-color: gray;
-    margin: 5px;    
+    margin: 5px;       
+    z-index: 1;
+}
+
+.mainfeature:hover{
+    filter: saturate(1);
+}
+
+.label{
+    display: inline-flex;
+    position: relative;
+    background-color: var(--light);
+    font-family: monospace;
+    border: 1px;
+    border-style: solid;
+    font-size: 15px;
+    text-align: center;     
+    padding: 2px;
+    top: 70%;     
 }
 
 .gallery{
@@ -100,9 +151,7 @@
     grid-template-columns: 1fr 1fr;
 }
 
-
-
-img{
+.filter{
     filter: saturate(0.1);
     transition: all .75s ease-in-out;
     border: 5px;
@@ -111,9 +160,10 @@ img{
     margin: 5px; 
 }
 
-img:hover{
+.filter:hover{
     filter: saturate(1);
 }
+
 
 /*adaptive screen stuff */
 
