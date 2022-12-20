@@ -1,26 +1,20 @@
 :root{
     --light: white;
-    --dark: rgb(22, 22, 22);
+    --dark: rgb(61, 61, 61);
     --ban:aqua;
 }
 
 *{
  padding: 0px;
  margin: 0px;  
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 /*navigation stuff*/
-
-.banner{
-    display:flex;
-    flex-direction: row;
-    background-color: var(--ban);
-    width: 100%;
-}
-
 h1 {
     display: flex;
-    font-size: 400%;
+    font-size: 50px;
+    color: var(--dark);    
     padding: 15px;    
     margin-bottom:auto;
 }
@@ -33,7 +27,30 @@ h3{
 }
 
 a{
-    color: brown;    
+    color: skyblue;    
+    font-weight: bolder;
+}
+
+.banner{
+    display:flex;
+    flex-direction: row;
+    background-color: var(--dark);
+    width: 100%;
+}
+
+.botbanner{
+    display:flex;
+    flex-direction: row;
+    background-color: var(--dark);
+    width: 100%;
+    margin-top: 20px;
+}
+
+.nameplate{
+    display: inline-flex;
+    text-align: center;   
+    margin-top: 10px;     
+    background-color: skyblue;
 }
 
 .topnavbar{
@@ -43,34 +60,25 @@ a{
     margin-top: auto;
 }
 
-.botbanner{
-    display:flex;
-    flex-direction: row;
-    background-color: var(--ban);
-    width: 100%;
-    margin-top: 20px;
-}
-
 .botnavbar{
-    display: inline-flex;
+    display: inline-flex;   
     flex-direction: row;
     margin-top: auto;
-    margin-left: 10px;
+    margin-left: auto;    
 }
+
 .navbutton{
     display: flex;        
     padding: 5px;
     margin: 5px;    
     text-decoration-line: underline;
     text-align: center;
-    font-size: 25px;
-    
+    font-size: 25px;   
 }
 
 .navbutton:hover{
-    color: var(--light);
+    color: tan;
 }
-
 
 .tickertape {
     background-color: rgb(150, 75, 75);
@@ -135,7 +143,7 @@ a{
 
 .label{
     display: inline-flex;
-    position: relative;
+    position: absolute;
     background-color: var(--light);
     font-family: monospace;
     border: 1px;
@@ -144,6 +152,7 @@ a{
     text-align: center;     
     padding: 2px;
     top: 70%;     
+    z-index: 1
 }
 
 .gallery{
