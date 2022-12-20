@@ -4,39 +4,42 @@
 }
 
 *{
-    margin: 0;
-    padding: 0;
     background-color:rgb(153, 38, 247);
 }
 
 /*navigation stuff*/
 
 .banner{
+    display:flex;
+    flex-direction: row;
     background-color: skyblue;
     width: 100%;
 }
 
 .banner.nameplate, h1 {
-    display: inline-flex;
+    display: flex;
     background-color: var(--light);
     font-family: monospace;
     font-size: 400%;
     padding: 15px;    
+    margin: 0px;
 }
 
 .navbar{
     display: inline-flex;
+    flex-direction: row-reverse;
+    margin-left: auto;
+    margin-top: auto;
 }
 
 .navbutton{
     background-color: var(--light);
-    display: relative;
-    border: 1px;
-    border-style: solid;
+    display: flex;        
     padding: 5px;
     margin: 5px;    
-    text-decoration-line: none;
+    text-decoration-line: underline;
     text-align: center;
+    
 }
 
 .navbutton:hover{
@@ -49,53 +52,63 @@
     background-color: brown;
     width: 100%;
     height: 5em;
+    margin: 0px;
 }
 
 /*main section*/
 
-main {
+.mainsegment {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
 }
 
 
-main.nameplate, h3{
+.nameplate, h3{
     display: inline-flex;
     background-color: var(--light);
     font-family: monospace;
     font-size: 30px;
     text-align: center;   
     margin-top: 10px; 
+    padding-left:
+}
+
+.spiel{
+    display:flex;
+    position: relative;
+    left: 0px;
+    text-align: start;
 }
 
 
 .content{
-    display: inline-flex;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
-.work.nameplate, h3{
-    display: inline-flex;
-    background-color: var(--light);
-    font-family: monospace;
-    font-size: 30px;    
-    text-align: center;
-}
 
 .mainfeature{
-    width: 400px;
-    height: 400px;
+    width:98%;
     border: 5px;
-    border-color: black;
     border-style: solid;
-    margin: auto;    
+    border-color: gray;
+    margin: 5px;    
 }
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
 
 img{
     filter: saturate(0.1);
-    transition: all 1.5s ease-in-out;
-    border: 3px;
+    transition: all .75s ease-in-out;
+    border: 5px;
     border-style: solid;
-    border-color: gray;
+    border-color: gray;   
+    margin: 5px; 
 }
 
 img:hover{
@@ -106,7 +119,7 @@ img:hover{
 
 /*mobile phone viewing*/
 @media screen and (max-width: 768px){
-    main, {
+    main {
         display: grid;
         width:100%;
         grid-template-columns:repeat(12, 1fr);
@@ -129,9 +142,8 @@ img:hover{
         flex-direction: row;
         flex-wrap: wrap;
     }  
-    .navbar{
-    position: absolute;
-    right: 0px;
+    .nameplate{
+        width: 250px;
     }
 }
 
