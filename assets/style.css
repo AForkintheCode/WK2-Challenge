@@ -122,7 +122,6 @@ a{
     border-style: solid;
 }
 
-
 .mainfeature{
     width:98%;
     filter: saturate(0.1);
@@ -141,8 +140,19 @@ a{
     filter: saturate(1);
 }
 
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.frame{
+    border: 5px;
+    border-style: solid;
+    border-color: gray;
+    margin: 5px;       
+}
+
 .label{
-    display: inline-flex;
     position: absolute;
     background-color: var(--light);
     font-family: monospace;
@@ -150,14 +160,24 @@ a{
     border-style: solid;
     font-size: 15px;
     text-align: center;     
-    padding: 2px;
-    top: 70%;     
+    padding: 2px;       
     z-index: 1
+    top: 70%;
 }
 
-.gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+figure{
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+img{
+    max-width: 100%
+}
+
+figcaption{
+    align-self: flex-end;
+    
 }
 
 .filter{
@@ -173,7 +193,6 @@ a{
     filter: saturate(1);
 }
 
-
 /*adaptive screen stuff */
 
 /*mobile phone viewing*/
@@ -183,7 +202,6 @@ a{
         width:100%;
         grid-template-columns:repeat(12, 1fr);
     }
-
 }
 
 /*tablet viewing*/
