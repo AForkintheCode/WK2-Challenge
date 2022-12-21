@@ -82,59 +82,63 @@ a{
     color: tan;
 }
 
-.tickertape {
+.tickertape{
+    display: flex;
     background-color: rgb(150, 75, 75);
     width: 100%;
-    height: 5em;
-    margin: 0px;
+    height: 7em;  
+}
+
+.alert{
+    display: inline-flex;   
+    flex-direction: row;    
+    margin-left: auto;    
+    margin-right: 5%;    
+    margin-top: 20px;
 }
 
 /*main section*/
 
-.mainsegment {
+.nameplate1{
+    grid-area: sidebar1;
+    border-right: 2px solid rgb(0, 38, 48);
+    height: 50%;
+    margin: 2%
+}
+
+.nameplate2{
+    grid-area: sidebar2;
+    border-right: 2px solid rgb(0, 38, 48);
+    height: 90%;
+    margin: 2%
+}
+
+.content1{
+    grid-area: main1;
+    width: 80%;
+    height: 20%
+}
+
+.content2{
+    grid-area: main2;
+    justify-self: stretch;
+    grid-template-columns: 1fr 1fr
+}
+
+.thegrid{
     display: grid;
-    grid-template-columns: 1fr 4fr;
-}
-
-
-.nameplate {
-    display: inline-flex;
-    text-align: center;   
-    margin-top: 10px;     
-}
-
-.spiel{
-    display:flex;
-    position: relative;
-    left: 0px;
-    text-align: start;
-    padding: 10px;
-}
-
-
-.content{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    padding: 20px;
-    border-color: blue;
-    border-top: 0px;
-    border-bottom: 0px;
-    border-left: 5px;
-    border-right: 0px;
-    border-style: solid;
+    grid-template-columns: .33fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr 1fr;
+    grid-template-areas:
+    "sidebar1 main1 main1"
+    "sidebar2 main2 main2"  
+    "sidebar2 main2 main2"  
 }
 
 .mainfeature{
-    width:98%;
-    filter: saturate(0.1);
-    transition: all .75s ease-in-out;
-    background-image:url(Sunset.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
-    border: 5px;
-    border-style: solid;
-    border-color: gray;
-    margin: 5px;       
+    filter: saturate(0.1); 
+    width: fit-content;   
+    transition: all .8s ease-in-out;   
     z-index: 1;
 }
 
@@ -145,20 +149,7 @@ a{
 .gallery{
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-.label{
-    display:inline-block;
-    position: absolute;
-    background-color: var(--light);
-    font-family: monospace;
-    border: 1px;
-    border-style: solid;
-    font-size: 15px;
-    text-align: center;             
-    z-index: 1    
-    left: 0;
-    bottom: 20%;
+    width: fit-content;
 }
 
 figure{
@@ -167,11 +158,12 @@ figure{
     border-style: solid;
     border-color: gray;
     margin: 5px;    
-    filter: saturate(.1) 
+    filter: saturate(.1)     
 }
 
 figure:hover{
-    filter: saturate(1);
+    filter: saturate(1);   
+    transition: all .8s ease-in-out; 
 }
 
 img{
@@ -187,33 +179,22 @@ figcaption{
     background-color: rgb(19, 48, 48);
 }
 
-.filter{
-    filter: saturate(0.1);
-    transition: all .75s ease-in-out;
-    border: 5px;
-    border-style: solid;
-    border-color: gray;   
-    margin: 5px; 
-}
-
-.filter:hover{
-    filter: saturate(1);
-}
-
 /*adaptive screen stuff */
 
 /*mobile phone viewing*/
 @media screen and (max-width: 768px){
-    main {
+    main, .banner, .botbanner, .topnavbar, .botnavbar, .gallery{
         display: grid;
         width:100%;
-        grid-template-columns:repeat(12, 1fr);
+        grid-template-columns:repeat(12, 1fr);        
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 /*tablet viewing*/
 @media screen and (max-width: 992px){
-    main{
+    main, .banner, .botbanner, .topnavbar, .botnavbar, .gallery{
         display: flex;
         flex-direction: column;
     }
@@ -226,8 +207,5 @@ figcaption{
         flex-direction: row;
         flex-wrap: wrap;
     }  
-    .nameplate{
-        width: 250px;
-    }
 }
 
