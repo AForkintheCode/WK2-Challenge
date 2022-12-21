@@ -57,6 +57,7 @@ a{
     display: inline-flex;
     flex-direction: row;
     margin-left: auto;
+    margin-right: 5%;
     margin-top: auto;
 }
 
@@ -64,13 +65,14 @@ a{
     display: inline-flex;   
     flex-direction: row;
     margin-top: auto;
-    margin-left: auto;    
+    margin-left: 10%;    
+    margin-right: auto;
 }
 
 .navbutton{
     display: flex;        
     padding: 5px;
-    margin: 5px;    
+    margin: 20px;    
     text-decoration-line: underline;
     text-align: center;
     font-size: 25px;   
@@ -145,39 +147,44 @@ a{
     grid-template-columns: 1fr 1fr;
 }
 
-.frame{
-    border: 5px;
-    border-style: solid;
-    border-color: gray;
-    margin: 5px;       
-}
-
 .label{
+    display:inline-block;
     position: absolute;
     background-color: var(--light);
     font-family: monospace;
     border: 1px;
     border-style: solid;
     font-size: 15px;
-    text-align: center;     
-    padding: 2px;       
-    z-index: 1
-    top: 70%;
+    text-align: center;             
+    z-index: 1    
+    left: 0;
+    bottom: 20%;
 }
 
 figure{
-    display:flex;
-    flex-direction: column;
-    margin: 0;
+    position: relative;
+    border: 5px;
+    border-style: solid;
+    border-color: gray;
+    margin: 5px;    
+    filter: saturate(.1) 
+}
+
+figure:hover{
+    filter: saturate(1);
 }
 
 img{
-    max-width: 100%
+    display:block;
 }
 
+
 figcaption{
-    align-self: flex-end;
-    
+    z-index: 5;    
+    position: absolute;
+    bottom: 20%;
+    color: white;
+    background-color: rgb(19, 48, 48);
 }
 
 .filter{
