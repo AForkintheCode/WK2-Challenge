@@ -106,8 +106,9 @@ a{
     margin-right: 5%;     
     margin-top: auto;    
     margin-bottom: auto;
+    border-radius: 10px;
+    background-color: tan;
     text-align: right;   
-    border-radius: 10px; 
 }
 
 /*main section*/
