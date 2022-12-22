@@ -55,11 +55,12 @@ a{
     margin-top: 20px;
 }
 
-.nameplate{
+.nameplate1{
     display: inline-flex;
     text-align: center;   
     margin-top: 10px;     
     background-color: skyblue;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .topnavbar{
@@ -102,20 +103,23 @@ a{
     display: inline-flex;   
     flex-direction: row;    
     margin-left: auto;    
-    margin-right: 5%;    
-    margin-top: 20px;
+    margin-right: 5%;     
+    margin-top: auto;    
+    margin-bottom: auto;
+    text-align: right;   
+    border-radius: 10px; 
 }
 
 /*main section*/
 
-.nameplate1{
+.nameplate2{
     grid-area: sidebar1;
     border-right: 2px solid rgb(0, 38, 48);
     height: 50%;
     margin: 2%
 }
 
-.nameplate2{
+.nameplate3{
     grid-area: sidebar2;
     border-right: 2px solid rgb(0, 38, 48);
     height: 90%;
