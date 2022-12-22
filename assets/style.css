@@ -10,8 +10,11 @@
  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-/*navigation stuff*/
-h1 {
+p{
+    font-size:20px;
+}
+
+h1{
     display: flex;
     font-size: 50px;
     color: var(--dark);    
@@ -19,9 +22,13 @@ h1 {
     margin-bottom:auto;
 }
 
+h2{
+    color: var(--light);
+}
+
 h3{
     display: flex;
-    font-size: 200%;
+    font-size: 30px;
     padding: 15px;    
     margin-bottom:auto;
 }
@@ -31,6 +38,8 @@ a{
     font-weight: bolder;
 }
 
+
+/*navigation stuff*/
 .banner{
     display:flex;
     flex-direction: row;
@@ -136,14 +145,7 @@ a{
 }
 
 .mainfeature{
-    filter: saturate(0.1); 
-    width: fit-content;   
-    transition: all .8s ease-in-out;   
-    z-index: 1;
-}
-
-.mainfeature:hover{
-    filter: saturate(1);
+    width: fit-content;       
 }
 
 .gallery{
@@ -157,19 +159,19 @@ figure{
     border: 5px;
     border-style: solid;
     border-color: gray;
-    margin: 5px;    
-    filter: saturate(.1)     
-}
-
-figure:hover{
-    filter: saturate(1);   
-    transition: all .8s ease-in-out; 
+    margin: 5px;         
 }
 
 img{
     display:block;
+    filter: saturate(.1);       
 }
 
+img:hover{
+    display:block;
+    filter: saturate(1); 
+    transition: all .8s ease-in-out;    
+}
 
 figcaption{
     z-index: 5;    
@@ -178,6 +180,14 @@ figcaption{
     color: white;
     background-color: rgb(19, 48, 48);
 }
+
+.contact{
+    display: inline-flex;
+    text-align: center;   
+    margin-top: auto;     
+    padding: 20px;  
+}
+
 
 /*adaptive screen stuff */
 
