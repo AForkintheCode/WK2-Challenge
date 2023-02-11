@@ -1,6 +1,22 @@
-console.log("Hello World")
-var name = window.prompt ("Hello, what should I call you?")
-console.log("hello " + name)
-var add = 2
 
+document.getElementById("notes").style.display = 'none'
+
+function toggleNotes() {
+   
+    notesEl = document.getElementById("notes")
+    if (notesEl.style.display === 'none') {
+        $( notesEl).slideDown( "slow", function() {
+            // Animation complete.
+          });
+    }
+    else {
+        $( notesEl).slideUp( "slow", function() {
+        })
+    }
+}
+
+
+$('#exhibit-4').on("click", function (e){
+    toggleNotes();
+})
 

@@ -9,7 +9,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    <script src="jquery-3.6.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>cd myportfolio</title>
 </head>
 
@@ -39,11 +39,12 @@
     <main>
         <div class="container-fluid">
             <div class="row ">
-                <div id="nameplate2" class="col-2"><h3>About Me</h3></div>
-                <div class = "col-1"></div>
-                <div class="col-6">                    
-                    Sinclair Li is a native of San Diego, California.  An web
-                    developer, he is versed in HTML, CSS,
+                <div id="nameplate2" class="col-2">
+                    <h3>About Me</h3>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-6">
+                    Sinclair Li is a native of San Diego, California. An front-end developer, he is versed in HTML, CSS,
                     and JavaScript. He enjoys building computers and is constantly learning and developing his skills in
                     the field. In his free time he enjoys playing sports, photography, collecting baseball cards,
                     gardening,
@@ -52,21 +53,29 @@
                     He is an avid baseball fan and enjoys rooting on the San Diego Padres. He hopes to see them win the
                     World Series one day.
                 </div>
-                <div class = "col-2"></div>                
+                <div class="col-2"></div>
             </div>
-            <div id="blank" class="row"></div>
             <div class="row">
-                <div id="nameplate3" class="col-2"><h3>Work</h3></div>
+                <div id="nameplate3" class="col-2">
+                    <h3></h3>
+                </div>
+                <div class="col-8"></div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row ">
+                <div id="nameplate4" class="col-2">
+                    <h3>Work</h3>
+                </div>
                 <div class="col-10">
                     <div class="container-fluid">
                         <div class="row justify-content-md-left">
                             <div class="col-1"></div>
                             <div class="col-8">
-                                <figure id="mainfeature" class="figure>
-                                    <a href=" https://aforkinthecode.github.io/wk2-mini-project/"><img
-                                        src="./assets/images/baybridge.jpg" class="img-fluid" alt="baybridge" /></a>
-                                    <figcaption class="figure-caption text-center">
-                                        <h2>CSS Code Snippets</h2>How it's going.
+                                <figure id="mainfeature" class="figure">
+                                    <a href="https://aforkinthecode.github.io/wk2-mini-project"><img
+                                            src="./assets/images/baybridge.jpg" class="img-fluid" alt="baybridge" /></a>
+                                    <figcaption class="figure-caption col-4">
+                                        <h2>Featured Project:</h2>How it's going.
                                     </figcaption>
                                 </figure>
                             </div>
@@ -75,78 +84,75 @@
                         <div class="row justify-content-md-left">
                             <div class="col-1"></div>
                             <div class="col-4">
-                                <figure class="figure">
-                                    <div class="card bg-dark text-white" style="max-width: 600px;">
-                                        <img src="./assets/images/Sunset.jpg" class="figure-img img-fluid rounded"
-                                            alt="...">
-                                        <a href="https://aforkinthecode.github.io/prework-study-guide/">
-                                            <div class="card-img-overlay">
-                                                <h5 class="card-title">Rock, Paper, Scissors</h5>
-                                                <p class="card-text">
-                                                    An game in Javascript.
-                                                </p>                                            
-                                            </div>
-                                        </a>
-                                    </div>
+                                <figure id="exhibit-1" class="figure">
+                                    <img src="./assets/images/code.jpg" class="figure-img img-fluid rounded"
+                                        alt="...">
+                                    <figcaption class="figure-caption col-4">
+                                        <h2>Notes:</h2>HTML, CSS, Javascript
+                                    </figcaption>
                                 </figure>
                             </div>
                             <div class="col-4">
-                                <figure class="figure">
-                                    <div class="card bg-dark text-white" style="max-width: 600px;">
-                                        <a href="https://aforkinthecode.github.io/prework-study-guide/"><img
-                                                src="./assets/images/Sunset.jpg" class="figure-img img-fluid rounded"
-                                                alt="..."></a>
-                                        <div class="card-img-overlay">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">
-                                                This is a wider card with supporting text below as a natural lead-in to
-                                                additional
-                                                content. This content is a little bit longer.
-                                            </p>
-                                            <p class="card-text"></p>
-                                        </div>
-                                    </div>
+                                <figure id="exhibit-2" class="figure">
+                                    <a href="https://aforkinthecode.github.io/weatherforecast/"><img
+                                            src="./assets/images/Sunset.jpg" class="figure-img img-fluid rounded"
+                                            alt="..."></a>
+                                    <figcaption class="figure-caption col-4">
+                                        <h2>A 5-Day Weather Forecast</h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>                        
+                        <div id="space" class="row justify-content-md-left"></div>
+                            <div class="col-1"></div>
+                            <div class="col-8"></div>
+                            <div class="col-1"></div>
+                        <div class="row justify-content-md-left">
+                            <div class="col-1"></div>
+                            <div class="col-4">
+                                <figure id="exhibit-3" class="figure">
+                                    <a href="https://aforkinthecode.github.io/weatherforecast/"><img
+                                            src="./assets/images/Sunset.jpg" class="figure-img img-fluid rounded"
+                                            alt="..."></a>
+                                    <figcaption class="figure-caption col-4">
+                                        <h2>A 5-Day Weather Forecast</h2>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-4">
+                                <figure id="exhibit-4" class="figure">
+                                    <img src="./assets/images/code.jpg" class="figure-img img-fluid rounded"
+                                        alt="...">
+                                    <figcaption class="figure-caption col-4">
+                                        <h2>Notes:</h2>HTML, CSS, Javascript
+                                    </figcaption>
                                 </figure>
                             </div>
                             <div class="col-1"></div>
                         </div>
-                        <div class="row justify-content-md-left">
+                        <div id="notes" class="row justify-content-end">
                             <div class="col-1"></div>
-                            <div class="col-4">
-                                <figure class="figure">
-                                    <div class="card bg-dark text-white" style="max-width: 600px;">
-                                        <a href="https://aforkinthecode.github.io/rockpaperscissors/"><img
-                                                src="./assets/images/coronado.jpg" class="figure-img img-fluid rounded"
-                                                alt="..."></a>
-                                        <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.3)">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">
-                                                This is a wider card with supporting text below as a natural lead-in to
-                                                additional
-                                                content. This content is a little bit longer.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="col-4">
-                                <figure class="figure">
-                                    <div class="card bg-dark text-white" style="max-width: 600px;">
-                                        <a href="https://aforkinthecode.github.io/rockpaperscissors/"><img
-                                                src="./assets/images/coronado.jpg" class="figure-img img-fluid rounded"
-                                                alt="..."></a>
-                                        <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.3)">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">
-                                                This is a wider card with supporting text below as a natural lead-in to
-                                                additional
-                                                content. This content is a little bit longer.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </div>
                             <div class="col-1"></div>
+                            <div class="col-8">
+                                <div id="notes-actual" class="row justify-content-end">
+                                    
+                                    <div class="col border rounded border-3 border-dark mx-3 justify-content-start post-it">
+                                        <ul>
+                                            <li><a href="https://aforkinthecode.github.io/prework-study-guide/">Getting Started</a></li>
+                                            <li><a href="https://aforkinthecode.github.io/wk2-mini-project">Adding some style...</a></li>
+                                        
+                                        </ul>
+                                    </div>
+                                    <div class="col border rounded border-3 border-dark mx-3 justify-content-start post-it">                                                                                     
+                                    </div>
+                                    <div class="col border rounded border-3 border-dark  mx-3 justify-content-start post-it">                                   
+                                    </div>
+                                    <div class="col border rounded border-3 border-dark mx-3 justify-content-start post-it"> 
+                                        Additional Resources                                     
+                                    </div>
+                                </div>
+                            </div>                            
                         </div>
                     </div>
 
@@ -172,7 +178,7 @@
                 href="https://open.spotify.com/playlist/13FuYWqud4ath00tfV0tIZ?si=aa8445f446ca45e7">Spotify</a>
         </section>
     </section>
-    <!-- <script src="./assets/js/script.js"></script> -->
+    <script src="./assets/js/script.js"></script>
 
 
 </footer>
