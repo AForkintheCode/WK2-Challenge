@@ -1,0 +1,22 @@
+{
+  "name": "wk2-challenge",
+  "version": "1.0.0",
+  "description": "node.js sandbox",
+  "main": "sample.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AForkintheCode/WK2-Challenge.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "sl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AForkintheCode/WK2-Challenge/issues"
+  },
+  "homepage": "https://github.com/AForkintheCode/WK2-Challenge#readme"
+}

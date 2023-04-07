@@ -1,7 +1,8 @@
 :root{
     --light: white;
-    --dark: rgb(61, 61, 61);
+    --dark: rgb(29, 29, 29);
     --ban:aqua;
+    --maroon: #923232;
 }
 
 *{
@@ -40,11 +41,15 @@ a{
 
 
 /*navigation stuff*/
-.banner{
+#nav{
     display:flex;
     flex-direction: row;
     background-color: var(--dark);
-    width: 100%;
+    width: 100%;    
+}
+
+#banner{
+    background-color: var(--maroon);
 }
 
 .botbanner{
@@ -113,77 +118,50 @@ a{
 
 /*main section*/
 
-.nameplate2{
-    grid-area: sidebar1;
+#nameplate2{    
     border-right: 2px solid rgb(0, 38, 48);
-    height: 50%;
-    margin: 2%
 }
 
-.nameplate3{
-    grid-area: sidebar2;
+#nameplate3{
     border-right: 2px solid rgb(0, 38, 48);
-    height: 90%;
-    margin: 2%
 }
 
-.content1{
-    grid-area: main1;
-    width: 80%;
-    height: 20%
+#nameplate4{
+    border-right: 2px solid rgb(0, 38, 48);
 }
 
-.content2{
-    grid-area: main2;
-    justify-self: stretch;
-    grid-template-columns: 1fr 1fr
-}
-
-.thegrid{
-    display: grid;
-    grid-template-columns: .33fr 1fr 1fr;
-    grid-template-rows: .5fr 1fr 1fr;
-    grid-template-areas:
-    "sidebar1 main1 main1"
-    "sidebar2 main2 main2"  
-    "sidebar2 main2 main2"  
+#blank{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #mainfeature{
-    width: fit-content;       
-}
-
-.gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     width: fit-content;
+    height: fit-content;  
 }
 
-figure{
-    position: relative;
-    border: 5px;
-    border-style: solid;
-    border-color: gray;
-    margin: 5px;         
-}
 
-img{
-    display:block;
+img{    
     filter: saturate(.1);       
 }
 
-img:hover{
-    display:block;
+img:hover{    
     filter: saturate(1); 
     transition: all .8s ease-in-out;    
 }
 
+figure{
+    margin-block-end: 0px;
+}
+
 figcaption{
     z-index: 5;    
-    position: absolute;
-    bottom: 20%;
+    position: relative;
+    vertical-align:top;
+    bottom: 6em;
     color: white;
     background-color: rgb(19, 48, 48);
+    align-items: center;
 }
 
 .contact{
@@ -191,6 +169,19 @@ figcaption{
     text-align: center;   
     margin-top: auto;     
     padding: 20px;  
+}
+
+#notes-actual{
+    display: inline-flex;
+    padding-bottom: 3em;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.post-it{
+    padding-top: 1em;
+    padding-left: 0%;
+    border: 5px;   
 }
 
 
