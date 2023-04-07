@@ -1,8 +1,8 @@
 :root{
     --light: white;
-    --dark: rgb(61, 61, 61);
+    --dark: rgb(29, 29, 29);
     --ban:aqua;
-    --maroon: #964b4b;
+    --maroon: #923232;
 }
 
 *{
